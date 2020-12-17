@@ -34,7 +34,7 @@ def pairplot():
 
 
 def render_index(image = None):
-    return render_template("index.html", links=links, code=time.time())
+    return render_template("index.html", links=links, code=time.time(), image = (image, image))
 
 
 @app.route('/fair_vs_pclass', methods=['GET'])
